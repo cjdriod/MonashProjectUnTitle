@@ -4,7 +4,7 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
-const routes = [
+const bRoutes = [
   {
     path: "/",
     name: "home",
@@ -21,8 +21,28 @@ const routes = [
   }
 ];
 
+const requireComponent = require.context(
+  // Look for files in the current directory
+  "../app",
+  // Look in  subdirectories
+  true,
+  // Only include "_base-" prefixed .vue files
+  /router.js$/
+);
+
+let routes = [...bRoutes];
+// For each matching file name...
+requireComponent.keys().forEach(fileName => {
+  // Can use _ to turn route off
+  if (fileName.indexOf("_") === -1) {
+    routes = [...routes, ...requireComponent(fileName).default];
+  }
+});
+/* eslint-disable no-debugger */
+debugger
+/* eslint-enable no-debugger */
 const router = new VueRouter({
-  routes
+  routes: routes
 });
 
 export default router;

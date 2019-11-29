@@ -17,7 +17,7 @@
     <v-content>
       <v-container fluid>
         <v-col>
-          <router-view/>
+          <router-view />
         </v-col>
       </v-container>
     </v-content>
@@ -29,7 +29,7 @@ export default {
   name: "base-template",
   data() {
     return {
-      drawers: ['Default (no property)', 'Permanent', 'Temporary'],
+      drawers: ["Default (no property)", "Permanent", "Temporary"],
       primaryDrawer: {
         model: null,
         type: "default (no property)",
@@ -38,6 +38,9 @@ export default {
         mini: false
       }
     };
+  },
+  mounted() {
+    // this.$vuetify.theme.dark = true
   }
 };
 </script>
