@@ -38,9 +38,7 @@ requireComponent.keys().forEach(fileName => {
     routes = [...routes, ...requireComponent(fileName).default];
   }
 });
-/* eslint-disable no-debugger */
-debugger
-/* eslint-enable no-debugger */
+
 const router = new VueRouter({
   routes: routes
 });
