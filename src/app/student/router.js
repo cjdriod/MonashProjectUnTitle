@@ -2,14 +2,14 @@ export default [
   {
     path: "/user",
     component: () => import("../global/template/BaseTemplate"),
-    name: "userLanding"
-    // redirect: { name: '' },
-    // children: [
-    //   {
-    //     path: '',
-    //     components: () => import(''),
-    //     name: '',
-    //   }
-    // ]
+    name: "userLanding",
+    redirect: { name: 'dashboard' },
+    children: [
+      {
+        path: 'dashboard',
+        component: () => import('./dashboard'),
+        name: 'dashboard',
+      }
+    ]
   }
 ]

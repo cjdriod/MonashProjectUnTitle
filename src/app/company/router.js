@@ -3,11 +3,11 @@ export default [
     path: "/company",
     component: () => import("../global/template/BaseTemplateComp"),
     name: "companyLanding",
-    // redirect: { name: '' },
+    redirect: { name: 'CompanyDashboard' },
     children: [
       {
         path: 'dashboard',
-        components: () => import('../company/task-componenet/CompanyDashboard'),
+        component: () => import('../company/task-componenet/CompanyDashboard'),
         name: 'CompanyDashboard',
       },
       {
