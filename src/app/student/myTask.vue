@@ -101,8 +101,10 @@
             :dis="isReadOnly"
             v-model="field.description"
           ></v-textarea>
-          <v-file-input label="Project Submission"></v-file-input>
-          <v-btn block color="blue" dark class="mb-5" :to="{name: 'myTask', params: {bool: 'done'} }">Submit</v-btn>
+          <v-file-input label="Project Submission" v-model="filesData"></v-file-input>
+          <v-btn block color="blue" dark class="mb-5" @click="test" :disabled="!filesData"
+            >Submit</v-btn
+          >
         </v-container>
       </v-card>
     </v-dialog>
@@ -113,10 +115,10 @@
 export default {
   name: "myTask",
   props: {
-    bool: {type: String, default: ''}
+    bool: { type: String, default: "" }
   },
   mounted() {
-    this.bool === 'done' ? this.task = [] : this.menu2 = false
+    this.bool === "done" ? (this.task = []) : (this.menu2 = false);
   },
   data() {
     return {
@@ -138,15 +140,20 @@ export default {
       },
       dialog: false,
       editMode: false,
-      menu2: false
+      menu2: false,
+      filesData: null,
     };
   },
   methods: {
     openDialog(mode) {
       this.dialog = true;
       mode === "edit" ? (this.editMode = true) : (this.editMode = false);
+    },
+    test() {
+      this.task = [];
+      this.dialog = false;
     }
-  }
+  },
 };
 </script>
 
