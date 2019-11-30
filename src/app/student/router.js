@@ -12,8 +12,14 @@ export default [
       },
       {
         path: "profile",
-        component: () => import("./avatar.vue"),
+        component: () => import("./avatar"),
         name: "profile"
+      },
+      {
+        path: "my-task/:bool?",
+        component: () => import("./myTask"),
+        name: "myTask",
+        props: true,
       }
     ]
   }

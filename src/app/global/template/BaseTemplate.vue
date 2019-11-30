@@ -67,6 +67,11 @@ export default {
         name: "My Profile",
         icon: "mdi-account-box",
         link: { name: "profile" }
+      },
+      {
+        name: "My On-Going Project",
+        icon: "mdi-folder",
+        link: { name: "myTask" }
       }
     ]
   }),

@@ -55,14 +55,14 @@
       label="In case for any missing documents or diserpancy, you are willing to cooperate with us to provide evidence of your competency"
       required
     ></v-checkbox>
-    <v-btn color="success" class="mr-4" :disabled="loading" @click="validate">
+    <v-btn color="success" class="mr-4"  @click="validate">
       Validate
     </v-btn>
 
     <v-btn color="error" class="mr-4" @click="reset">
       Reset Form
     </v-btn>
-    <v-text-field color="success" v-model="loading" disabled></v-text-field>
+    <v-text-field color="success"  disabled></v-text-field>
   </v-form>
 </template>
 

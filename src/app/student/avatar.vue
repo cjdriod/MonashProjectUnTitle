@@ -11,7 +11,7 @@
           />
         </v-avatar>
       </div>
-      <v-divider class="mx-4" :inset="inset" vertical></v-divider>
+      <v-divider class="mx-4" inset vertical></v-divider>
       <div class="text--primary">
         <div class="text-center">
           <br />

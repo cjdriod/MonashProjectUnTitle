@@ -16,9 +16,10 @@ export default [
         component: () => import("./task-componenet/CompanyDetails")
       },
       {
-        path: "manage-task",
+        path: "manage-task/:view",
         name: "ManageTask",
-        component: () => import("./task-componenet/TaskManage")
+        component: () => import("./task-componenet/TaskManage"),
+        props: true
       }
     ]
   }
