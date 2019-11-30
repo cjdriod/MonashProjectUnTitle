@@ -1,29 +1,18 @@
-
 <template>
   <v-app>
-    <v-content>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col
-            cols="12"
-            sm="8"
-            md="4"
-          >
-            <v-card class="elevation-12">
-              <v-toolbar
-                color="primary"
-                dark
-                flat
-              >
-                <v-toolbar-title>Login Page</v-toolbar-title>
+    <v-content
+      :style="{
+        background: `url('https://www.setaswall.com/wp-content/uploads/2017/04/Material-Wallpaper-4-1920x1080.png')`
+      }"
+    >
+      <v-container class="fill-height" fluid>
+        <v-row align="center" justify="center">
+          <v-col cols="12" sm="8" md="4">
+            <v-card class="elevation-12 pb-6">
+              <v-toolbar color="primary" dark flat>
+                <v-toolbar-title>Industrial Connect</v-toolbar-title>
                 <v-spacer />
-                  <v-tooltip bottom>
+                <v-tooltip bottom>
                   <template v-slot:activator="{ on }">
                     <v-btn
                       icon
@@ -52,16 +41,17 @@
                   <span>LinkedIn</span>
                 </v-tooltip>
               </v-toolbar>
-              <v-card-text>
+              <v-card-text class="pb-0">
                 <v-form>
                   <v-text-field
-                    prepend-icon='mdi-account-circle'
+                    prepend-icon="mdi-account-circle"
                     label="Login"
                     name="login"
                     type="text"
+                    v-model="username"
                   />
                   <v-text-field
-                    :type="showPassword ? 'text' : 'password'" 
+                    :type="showPassword ? 'text' : 'password'"
                     label="Password"
                     prepend-icon="mdi-lock"
                     :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
@@ -74,11 +64,7 @@
                 </v-form>
               </v-card-text>
               <v-card-actions>
-                <v-spacer />
-                <v-btn 
-                color="primary"
-                block="true"
-                >Login</v-btn>
+                <v-btn @click="login" color="primary" block="true">Login</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -90,7 +76,21 @@
 
 <script>
 export default {
-  name: "LoginPage"
+  name: "LoginPage",
+  data() {
+    return {
+      username: ""
+    };
+  },
+  methods: {
+    login() {
+      if (this.username === "company") {
+        this.$router.push({ name: "companyLanding" });
+      } else {
+        this.$router.push({ name: "userLanding" });
+      }
+    }
+  }
 };
 </script>
 
