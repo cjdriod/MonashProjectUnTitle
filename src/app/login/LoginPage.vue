@@ -10,7 +10,7 @@
           <v-col cols="12" sm="8" md="4">
             <v-card class="elevation-12 pb-6">
               <v-toolbar color="primary" dark flat>
-                <v-toolbar-title>Industrial Connect</v-toolbar-title>
+                <v-toolbar-title>Edu Synergy <v-icon>mdi-copyright</v-icon></v-toolbar-title>
                 <v-spacer />
                 <v-tooltip bottom>
                   <template v-slot:activator="{ on }">
@@ -29,7 +29,6 @@
                 <v-tooltip right>
                   <template v-slot:activator="{ on }">
                     <v-btn
-                      :href="LinkedIn"
                       icon
                       large
                       target="_blank"
@@ -51,11 +50,8 @@
                     v-model="username"
                   />
                   <v-text-field
-                    :type="showPassword ? 'text' : 'password'"
                     label="Password"
                     prepend-icon="mdi-lock"
-                    :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-                    @click:append="showPassword = !showPassword"
                   />
                   <v-checkbox
                     v-model="checkbox"
@@ -64,7 +60,7 @@
                 </v-form>
               </v-card-text>
               <v-card-actions>
-                <v-btn @click="login" color="primary" block="true">Login</v-btn>
+                <v-btn @click="login" color="primary" block>Login</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -79,7 +75,8 @@ export default {
   name: "LoginPage",
   data() {
     return {
-      username: ""
+      username: "",
+      checkbox: true,
     };
   },
   methods: {
