@@ -9,7 +9,12 @@ export default [
         path: 'dashboard',
         component: () => import('./dashboard'),
         name: 'dashboard',
+      },
+      {
+        path: 'profile',
+        component: () => import('./avatar.vue'),
+        name: 'avatar',
       }
     ]
   }
-]
+];
