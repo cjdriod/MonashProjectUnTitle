@@ -2,14 +2,13 @@ export default [
   {
     path: "/user",
     component: () => import("../global/template/BaseTemplate"),
-    name: "userLanding"
-    // redirect: { name: '' },
-    // children: [
-    //   {
-    //     path: '',
-    //     components: () => import(''),
-    //     name: '',
-    //   }
-    // ]
+    name: "companyLanding",
+    children: [
+      {
+        path: 'profile',
+        component: () => import('./avatar.vue'),
+        name: 'avatar',
+      }
+    ]
   }
-]
+];
