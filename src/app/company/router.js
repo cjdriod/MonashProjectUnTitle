@@ -14,6 +14,11 @@ export default [
         path: "company-detail",
         name: "CompanyDetail",
         component: () => import("./task-componenet/CompanyDetails")
+      },
+      {
+        path: "manage-task",
+        name: "ManageTask",
+        component: () => import("./task-componenet/TaskManage")
       }
     ]
   }

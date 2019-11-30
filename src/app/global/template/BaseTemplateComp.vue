@@ -24,7 +24,7 @@
 
     <v-app-bar app color="blue darken-3" dark clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Yundt Ltd</v-toolbar-title>
+      <v-toolbar-title>Yundt Ltd's Control Panel</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-btn icon>
@@ -64,9 +64,9 @@ export default {
         link: { name: "CompanyDashboard" }
       },
       {
-        name: "Manage Task",
+        name: "Public Project",
         icon: "mdi-database-edit",
-        link: { name: "about" }
+        link: { name: "ManageTask" }
       },
       {
         name: "Job Posting",

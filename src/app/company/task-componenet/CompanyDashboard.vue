@@ -53,9 +53,8 @@ export default {
     return {
       pendingList: [
         { name: "Mary Hogan", job: "Andriod Developer", color: "green" },
-        { name: "Molly Kramer", job: "Andriod Developer", color: "green" },
         { name: "Hafsa Hess", job: "Backend Developer", color: "grey" },
-        { name: "Pippa Hayes", job: "Web-Developer", color: "blue" }
+        { name: "Pippa Hayes", job: "Web Developer", color: "blue" }
       ],
       taskList: [
         { title: "Complex Number Algebra", count: "4" },
