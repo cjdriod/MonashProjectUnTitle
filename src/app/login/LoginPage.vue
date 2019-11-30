@@ -10,7 +10,9 @@
           <v-col cols="12" sm="8" md="4">
             <v-card class="elevation-12 pb-6">
               <v-toolbar color="primary" dark flat>
-                <v-toolbar-title>Edu Synergy <v-icon>mdi-copyright</v-icon></v-toolbar-title>
+                <v-toolbar-title
+                  >Edu Synergy <v-icon>mdi-copyright</v-icon></v-toolbar-title
+                >
                 <v-spacer />
                 <v-tooltip bottom>
                   <template v-slot:activator="{ on }">
@@ -28,12 +30,7 @@
                 </v-tooltip>
                 <v-tooltip right>
                   <template v-slot:activator="{ on }">
-                    <v-btn
-                      icon
-                      large
-                      target="_blank"
-                      v-on="on"
-                    >
+                    <v-btn icon large target="_blank" v-on="on">
                       <v-icon>mdi-linkedin-box</v-icon>
                     </v-btn>
                   </template>
@@ -49,10 +46,7 @@
                     type="text"
                     v-model="username"
                   />
-                  <v-text-field
-                    label="Password"
-                    prepend-icon="mdi-lock"
-                  />
+                  <v-text-field label="Password" prepend-icon="mdi-lock" />
                   <v-checkbox
                     v-model="checkbox"
                     :label="`Remember me`"
@@ -76,7 +70,7 @@ export default {
   data() {
     return {
       username: "",
-      checkbox: true,
+      checkbox: true
     };
   },
   methods: {

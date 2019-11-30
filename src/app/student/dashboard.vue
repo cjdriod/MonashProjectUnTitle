@@ -1,12 +1,8 @@
 <template>
   <v-card color="white">
-    <v-tabs
-      v-model="tab"
-      grow
-    >
+    <v-tabs v-model="tab" grow>
       <v-tab>Project</v-tab>
       <v-tab>Internship</v-tab>
-
     </v-tabs>
 
     <v-tabs-items v-model="tab">
@@ -15,35 +11,39 @@
           <v-row>
             <v-col cols="12">
               <v-text-field
-                  prepend-icon="mdi-magnify"
-                  label="Search Keyword"
-                  name="Keyword"
-                  type="text"
-                />
+                prepend-icon="mdi-magnify"
+                label="Search Keyword"
+                name="Keyword"
+                type="text"
+              />
               <v-card class=" mb-5">
                 <v-card-text>
-                  <div>COMPANY ZZZ</div>
+                  <div>Yundt Ltd</div>
                   <p class="display-1 text--primary">
-                    Database Administrator
+                    Complex Number Algebra
                   </p>
                   <p>
-                  Difficulty
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
+                    Difficulty
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
                   </p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -55,26 +55,30 @@
                     UX/UI Web Design
                   </p>
                   <p>
-                  Difficulty
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
+                    Difficulty
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
                   </p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -86,29 +90,33 @@
                     Software Tester
                   </p>
                   <p>
-                  Difficulty
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
+                    Difficulty
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
                   </p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -120,29 +128,33 @@
                     ASM Scripting
                   </p>
                   <p>
-                  Difficulty
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
-                  <v-icon>
-                  mdi-hexagram-outline
-                  </v-icon>
+                    Difficulty
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
+                    <v-icon>
+                      mdi-hexagram-outline
+                    </v-icon>
                   </p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -156,11 +168,11 @@
           <v-row>
             <v-col cols="12">
               <v-text-field
-                  prepend-icon="mdi-magnify"
-                  label="Search Keyword"
-                  name="Keyword"
-                  type="text"
-                /> 
+                prepend-icon="mdi-magnify"
+                label="Search Keyword"
+                name="Keyword"
+                type="text"
+              />
               <v-card class=" mb-5">
                 <v-card-text>
                   <p class="display-1 text--primary">
@@ -169,17 +181,20 @@
                   <p class="display-1 text--secondary">
                     DBP Inc.
                   </p>
-                  <p>
-                  </p>
+                  <p></p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -192,17 +207,20 @@
                   <p class="display-1 text--secondary">
                     GARY Inc.
                   </p>
-                  <p>
-                  </p>
+                  <p></p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -215,17 +233,20 @@
                   <p class="display-1 text--secondary">
                     GCP Inc.
                   </p>
-                  <p>
-                  </p>
+                  <p></p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -238,17 +259,20 @@
                   <p class="display-1 text--secondary">
                     YYY Inc.
                   </p>
-                  <p>
-                  </p>
+                  <p></p>
                   <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </div>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    text
-                    color="blue accent-4"
-                  >
+                  <v-btn text color="blue accent-4">
                     Learn More
                   </v-btn>
                 </v-card-actions>
@@ -262,13 +286,13 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        tab: null,
-      }
-    },
+export default {
+  data() {
+    return {
+      tab: null
+    };
   }
+};
 </script>
 
 <style></style>

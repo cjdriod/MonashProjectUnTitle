@@ -12,9 +12,11 @@
                 <template v-for="i in taskList">
                   <ol :key="i.title" class="pb-1">
                     {{
-                    i.title
+                      i.title
                     }}
-                    <span class="grey--text text--lighten-1 pl-4"># of participant: {{i.count}}</span>
+                    <span class="grey--text text--lighten-1 pl-4"
+                      ># of participant: {{ i.count }}</span
+                    >
                   </ol>
                 </template>
               </ul>
@@ -34,7 +36,7 @@
                     {{
                       i.name
                     }}
-                    <v-chip class="ml-3" :color="i.color">{{i.job}}</v-chip>
+                    <v-chip class="ml-3" :color="i.color">{{ i.job }}</v-chip>
                   </ol>
                 </template>
               </ul>
@@ -58,7 +60,7 @@ export default {
       ],
       taskList: [
         { title: "Complex Number Algebra", count: "4" },
-        { title: "Recipe Creator and Manager", count: "12" },
+        { title: "Recipe Creator and Manager", count: "12" }
       ]
     };
   }

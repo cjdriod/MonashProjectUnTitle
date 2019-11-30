@@ -4,4 +4,4 @@ export default [
     name: "login",
     component: () => import("../login/LoginPage")
   }
-]
+];

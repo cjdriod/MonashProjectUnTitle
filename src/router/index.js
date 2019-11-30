@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Login from "../app/login/LoginPage";
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,7 @@ const bRoutes = [
   {
     path: "/",
     name: "home",
-    component: Home
+    component: Login
   },
   {
     path: "/about",

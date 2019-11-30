@@ -89,7 +89,8 @@ export default {
       companyType: ["Information Technology", "Digital Marketing"],
       emailAddress: "yundtLtd@gmail.com",
       telNumber: "03-3123131313",
-      addresses: "116, Jalan Tengku Badar, Kampung Raja Uda, 42000 Pelabuhan Klang, Selangor",
+      addresses:
+        "116, Jalan Tengku Badar, Kampung Raja Uda, 42000 Pelabuhan Klang, Selangor"
     };
   }
 };
